@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none">
+    <defs>
+        <linearGradient id="chGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="100%" stop-color="#818CF8"/>
+        </linearGradient>
+        <linearGradient id="chGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#06B6D4"/>
+            <stop offset="100%" stop-color="#22D3EE"/>
+        </linearGradient>
+        <linearGradient id="chGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10B981"/>
+            <stop offset="100%" stop-color="#34D399"/>
+        </linearGradient>
+        <linearGradient id="chGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F59E0B"/>
+            <stop offset="100%" stop-color="#FBBF24"/>
+        </linearGradient>
+        <linearGradient id="chGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#EF4444"/>
+            <stop offset="100%" stop-color="#F87171"/>
+        </linearGradient>
+        <linearGradient id="chGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#8B5CF6"/>
+            <stop offset="100%" stop-color="#A78BFA"/>
+        </linearGradient>
+        <filter id="chShadow" x="-10%" y="-10%" width="120%" height="130%">
+            <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+        </filter>
+    </defs>
+
+    <!-- SMS -->
+    <g filter="url(#chShadow)">
+        <rect x="20" y="20" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="50" y="45" width="80" height="40" rx="8" fill="url(#chGrad1)"/>
+    <line x1="65" y1="58" x2="135" y2="58" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="65" y1="70" x2="120" y2="70" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <line x1="65" y1="82" x2="100" y2="82" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <text x="90" y="105" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">SMS</text>
+
+    <!-- WhatsApp -->
+    <g filter="url(#chShadow)">
+        <rect x="180" y="20" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="250" cy="60" r="22" fill="#25D366"/>
+    <path d="M238 60C238 51.7 244.7 45 253 45C261.3 45 268 51.7 268 60C268 68.3 261.3 75 253 75C250.8 75 248.7 74.6 246.8 73.8L241 76L242.3 70.2C239.4 67.8 238 64.1 238 60Z" fill="white"/>
+    <text x="250" y="105" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">WhatsApp</text>
+
+    <!-- Voice -->
+    <g filter="url(#chShadow)">
+        <rect x="340" y="20" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="410" cy="55" r="20" fill="url(#chGrad2)"/>
+    <path d="M402 48V62M407 44V66M412 48V62M417 50V60" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M430 45C438 50 442 55 442 60C442 65 438 70 430 75" stroke="url(#chGrad2)" stroke-width="2" stroke-linecap="round" fill="none"/>
+    <text x="410" y="105" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Voice</text>
+
+    <!-- Email -->
+    <g filter="url(#chShadow)">
+        <rect x="20" y="140" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="45" y="160" width="90" height="55" rx="6" fill="url(#chGrad3)"/>
+    <path d="M45 165L90 195L135 165" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="90" y="225" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Email</text>
+
+    <!-- RCS -->
+    <g filter="url(#chShadow)">
+        <rect x="180" y="140" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="220" cy="175" r="15" fill="url(#chGrad4)"/>
+    <rect x="245" y="165" width="50" height="20" rx="6" fill="url(#chGrad1)"/>
+    <text x="270" y="179" text-anchor="middle" font-size="10" fill="white" font-family="Inter,sans-serif" font-weight="600">RCS</text>
+    <text x="250" y="225" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Rich Messaging</text>
+
+    <!-- Viber -->
+    <g filter="url(#chShadow)">
+        <rect x="340" y="140" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="410" cy="180" r="20" fill="#7360F2"/>
+    <path d="M402 175C402 168 407 163 414 163C416 163 418 164 420 165L423 162L422 168C424 169 425 171 425 173C425 180 420 185 413 185C411 185 409 184 407 183L402 185L403 180C402 178 402 177 402 175Z" fill="white"/>
+    <text x="410" y="225" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Viber</text>
+
+    <!-- Push -->
+    <g filter="url(#chShadow)">
+        <rect x="20" y="260" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="55" y="280" width="70" height="45" rx="8" fill="url(#chGrad5)"/>
+    <circle cx="90" cy="295" r="8" fill="white" opacity="0.3"/>
+    <path d="M85 305H95M90 300V310" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <text x="90" y="345" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Push</text>
+
+    <!-- Messenger -->
+    <g filter="url(#chShadow)">
+        <rect x="180" y="260" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="250" cy="300" r="20" fill="url(#chGrad6)"/>
+    <path d="M240 295L250 305L262 290" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="250" y="345" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Messenger</text>
+
+    <!-- Instagram -->
+    <g filter="url(#chShadow)">
+        <rect x="340" y="260" width="140" height="100" rx="16" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="380" y="275" width="60" height="60" rx="14" fill="none" stroke="url(#chGrad5)" stroke-width="3"/>
+    <circle cx="410" cy="305" r="12" fill="none" stroke="url(#chGrad5)" stroke-width="3"/>
+    <circle cx="428" cy="287" r="3" fill="url(#chGrad5)"/>
+    <text x="410" y="345" text-anchor="middle" font-size="12" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Instagram</text>
+</svg>

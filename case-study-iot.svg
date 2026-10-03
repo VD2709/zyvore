@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 350" fill="none">
+    <defs>
+        <linearGradient id="iotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="100%" stop-color="#06B6D4"/>
+        </linearGradient>
+        <linearGradient id="iotGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#10B981"/>
+            <stop offset="100%" stop-color="#06B6D4"/>
+        </linearGradient>
+        <filter id="iotShadow" x="-10%" y="-10%" width="120%" height="130%">
+            <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.1"/>
+        </filter>
+    </defs>
+
+    <!-- Background -->
+    <circle cx="250" cy="175" r="140" fill="url(#iotGrad)" opacity="0.04"/>
+    <circle cx="250" cy="175" r="100" fill="url(#iotGrad)" opacity="0.04"/>
+
+    <!-- Central cloud -->
+    <g filter="url(#iotShadow)">
+        <ellipse cx="250" cy="120" rx="60" ry="35" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <ellipse cx="230" cy="110" rx="25" ry="18" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    <ellipse cx="270" cy="110" rx="20" ry="15" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    <text x="250" y="125" text-anchor="middle" font-size="11" fill="#6366F1" font-family="Inter,sans-serif" font-weight="700">CLOUD</text>
+
+    <!-- Connection lines -->
+    <g stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.5">
+        <line x1="200" y1="140" x2="120" y2="200"/>
+        <line x1="220" y1="150" x2="180" y2="240"/>
+        <line x1="280" y1="150" x2="320" y2="240"/>
+        <line x1="300" y1="140" x2="380" y2="200"/>
+        <line x1="250" y1="155" x2="250" y2="280"/>
+    </g>
+
+    <!-- Device 1 - Smart Meter -->
+    <g filter="url(#iotShadow)">
+        <rect x="80" y="200" width="80" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="95" y="215" width="50" height="25" rx="4" fill="url(#iotGrad)"/>
+    <text x="120" y="232" text-anchor="middle" font-size="10" fill="white" font-family="Inter,sans-serif" font-weight="600">kWh</text>
+    <circle cx="120" cy="255" r="8" fill="none" stroke="#10B981" stroke-width="2"/>
+    <text x="120" y="285" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Smart Meter</text>
+
+    <!-- Device 2 - GPS Tracker -->
+    <g filter="url(#iotShadow)">
+        <rect x="150" y="240" width="70" height="60" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="185" cy="265" r="15" fill="none" stroke="url(#iotGrad2)" stroke-width="2"/>
+    <circle cx="185" cy="265" r="5" fill="url(#iotGrad2)"/>
+    <path d="M185 250V255M185 275V280M170 265H175M195 265H200" stroke="url(#iotGrad2)" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="185" y="315" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">GPS Tracker</text>
+
+    <!-- Device 3 - Sensor -->
+    <g filter="url(#iotShadow)">
+        <rect x="330" y="240" width="70" height="60" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="345" y="255" width="40" height="20" rx="4" fill="url(#iotGrad)"/>
+    <text x="365" y="269" text-anchor="middle" font-size="9" fill="white" font-family="Inter,sans-serif" font-weight="600">24°C</text>
+    <text x="365" y="315" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Temp Sensor</text>
+
+    <!-- Device 4 - Camera -->
+    <g filter="url(#iotShadow)">
+        <rect x="350" y="200" width="80" height="70" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="390" cy="225" r="15" fill="none" stroke="#6366F1" stroke-width="2"/>
+    <circle cx="390" cy="225" r="6" fill="#6366F1"/>
+    <rect x="375" y="245" width="30" height="15" rx="3" fill="url(#iotGrad)"/>
+    <text x="390" y="285" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">AI Camera</text>
+
+    <!-- Device 5 - Hub -->
+    <g filter="url(#iotShadow)">
+        <rect x="220" y="280" width="60" height="50" rx="10" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="235" y="292" width="30" height="20" rx="4" fill="url(#iotGrad2)"/>
+    <circle cx="250" cy="302" r="4" fill="white"/>
+    <text x="250" y="345" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">IoT Hub</text>
+
+    <!-- Data flow dots -->
+    <circle r="3" fill="#6366F1">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M200 140L120 200"/>
+    </circle>
+    <circle r="3" fill="#06B6D4">
+        <animateMotion dur="2.5s" repeatCount="indefinite" path="M300 140L380 200"/>
+    </circle>
+    <circle r="3" fill="#10B981">
+        <animateMotion dur="3s" repeatCount="indefinite" path="M250 155L250 280"/>
+    </circle>
+
+    <!-- Stats badges -->
+    <g filter="url(#iotShadow)">
+        <rect x="30" y="30" width="100" height="35" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <text x="80" y="45" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif">DEVICES</text>
+    <text x="80" y="58" text-anchor="middle" font-size="13" fill="#6366F1" font-family="Inter,sans-serif" font-weight="700">100K+</text>
+
+    <g filter="url(#iotShadow)">
+        <rect x="370" y="30" width="100" height="35" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <text x="420" y="45" text-anchor="middle" font-size="9" fill="#64748B" font-family="Inter,sans-serif">UPTIME</text>
+    <text x="420" y="58" text-anchor="middle" font-size="13" fill="#10B981" font-family="Inter,sans-serif" font-weight="700">99.99%</text>
+</svg>
