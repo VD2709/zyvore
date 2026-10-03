@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zyvore — Global Connectivity & Digital Finance Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8L20 32L32 8" stroke="url(#grad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="20" cy="20" r="4" fill="url(#grad)"/>
+                        <defs>
+                            <linearGradient id="grad" x1="8" y1="8" x2="32" y2="32">
+                                <stop stop-color="#6366F1"/>
+                                <stop offset="1" stop-color="#06B6D4"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <span class="logo-text">Zyvore</span>
+            </a>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <button class="nav-link">Products <span class="arrow">&#9662;</span></button>
+                    <div class="dropdown-menu">
+                        <a href="#cpaas">Unified Communications</a>
+                        <a href="#esim">eSIM Platform</a>
+                        <a href="#fintech">Digital Wallet</a>
+                        <a href="#ai">AI Analytics</a>
+                    </div>
+                </div>
+                <div class="nav-dropdown">
+                    <button class="nav-link">Solutions <span class="arrow">&#9662;</span></button>
+                    <div class="dropdown-menu">
+                        <a href="#telecoms">For Telecoms</a>
+                        <a href="#enterprises">For Enterprises</a>
+                        <a href="#developers">For Developers</a>
+                    </div>
+                </div>
+                <a href="#partners" class="nav-link">Partners</a>
+                <a href="#insights" class="nav-link">Insights</a>
+                <a href="#about" class="nav-link">About</a>
+            </div>
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-outline">Sign In</a>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-grid"></div>
+            <div class="hero-glow hero-glow-1"></div>
+            <div class="hero-glow hero-glow-2"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Next-Gen Connectivity Platform
+                </div>
+                <h1 class="hero-title">
+                    Connect.<br>
+                    <span class="gradient-text">Communicate.</span><br>
+                    Transact.
+                </h1>
+                <p class="hero-subtitle">
+                    Zyvore unifies global communications, eSIM management, and digital finance 
+                    into one powerful platform — built for telecoms, enterprises, and developers.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        Start Building
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="#products" class="btn btn-ghost btn-lg">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/><path d="M8 7L13 10L8 13V7Z" fill="currentColor"/></svg>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">180+</span>
+                        <span class="stat-label">Countries Covered</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">2B+</span>
+                        <span class="stat-label">Messages Monthly</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Uptime SLA</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-card hero-card-main">
+                    <div class="card-header">
+                        <div class="card-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="card-title">Zyvore Dashboard</span>
+                    </div>
+                    <div class="card-body">
+                        <img src="assets/hero-illustration.svg" alt="Zyvore Platform Illustration" class="hero-illustration">
+                    </div>
+                </div>
+                <div class="hero-card hero-card-float-1">
+                    <div class="float-icon">&#128241;</div>
+                    <div class="float-text">
+                        <strong>SMS Delivered</strong>
+                        <span>2.4M today</span>
+                    </div>
+                </div>
+                <div class="hero-card hero-card-float-2">
+                    <div class="float-icon">&#128176;</div>
+                    <div class="float-text">
+                        <strong>Transactions</strong>
+                        <span>$847K processed</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By -->
+    <section class="trusted">
+        <div class="container">
+            <p class="trusted-label">Trusted by industry leaders worldwide</p>
+            <div class="trusted-logos">
+                <div class="trusted-logo">Vodafone</div>
+                <div class="trusted-logo">Orange</div>
+                <div class="trusted-logo">MTN</div>
+                <div class="trusted-logo">Etisalat</div>
+                <div class="trusted-logo">Airtel</div>
+                <div class="trusted-logo">T-Mobile</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chat Widget Section -->
+    <section class="section ai-section" id="ai-chat">
+        <div class="container">
+            <div class="ai-grid">
+                <div class="ai-content">
+                    <span class="section-tag">AI-Powered</span>
+                    <h2 class="section-title">Meet <span class="gradient-text">Zyvore AI</span></h2>
+                    <p class="section-subtitle">Your intelligent assistant for scheduling, analytics, customer support, and automation. Zyvore AI handles it all — so you can focus on growing your business.</p>
+                    <ul class="ai-features">
+                        <li>Natural language task automation</li>
+                        <li>Real-time analytics & reporting</li>
+                        <li>Intelligent routing & failover</li>
+                        <li>Predictive fraud detection</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg">Try Zyvore AI</a>
+                </div>
+                <div class="ai-visual">
+                    <img src="assets/ai-chat-widget.svg" alt="Zyvore AI Chat Widget" class="ai-widget-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Platform</span>
+                <h2 class="section-title">One Platform, <span class="gradient-text">Every Channel</span></h2>
+                <p class="section-subtitle">Everything you need to connect with customers, manage devices, and process payments — unified in a single platform.</p>
+            </div>
+            <div class="products-grid">
+                <!-- CPaaS -->
+                <div class="product-card" id="cpaas">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><path d="M8 32L16 16L24 28L32 12L40 32" stroke="url(#pg1)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="pg1" x1="8" y1="12" x2="40" y2="32"><stop stop-color="#6366F1"/><stop offset="1" stop-color="#818CF8"/></linearGradient></defs></svg>
+                    </div>
+                    <h3>Unified Communications</h3>
+                    <p>Send SMS, WhatsApp, Voice, RCS, Email, and Push through a single API. Build cross-channel journeys with our visual flow builder.</p>
+                    <ul class="product-features">
+                        <li>Multi-channel orchestration</li>
+                        <li>Real-time delivery tracking</li>
+                        <li>Smart failover routing</li>
+                        <li>Global compliance built-in</li>
+                    </ul>
+                    <a href="#contact" class="product-link">Learn more <span>&rarr;</span></a>
+                </div>
+                <!-- eSIM -->
+                <div class="product-card" id="esim">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="4" stroke="url(#pg2)" stroke-width="3"/><path d="M18 16H30M18 22H30M18 28H24" stroke="url(#pg2)" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="36" r="2" fill="url(#pg2)"/><defs><linearGradient id="pg2" x1="10" y1="8" x2="38" y2="40"><stop stop-color="#06B6D4"/><stop offset="1" stop-color="#22D3EE"/></linearGradient></defs></svg>
+                    </div>
+                    <h3>eSIM Management</h3>
+                    <p>Remote SIM provisioning, travel data plans, wholesale connectivity, and IoT device management — all from one hub.</p>
+                    <ul class="product-features">
+                        <li>Zero-touch provisioning</li>
+                        <li>Carrier-direct data routes</li>
+                        <li>White-label portals</li>
+                        <li>IoT fleet management</li>
+                    </ul>
+                    <a href="#contact" class="product-link">Learn more <span>&rarr;</span></a>
+                </div>
+                <!-- Fintech -->
+                <div class="product-card" id="fintech">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="12" width="36" height="24" rx="4" stroke="url(#pg3)" stroke-width="3"/><path d="M6 20H42" stroke="url(#pg3)" stroke-width="3"/><path d="M12 28H20" stroke="url(#pg3)" stroke-width="2" stroke-linecap="round"/><defs><linearGradient id="pg3" x1="6" y1="12" x2="42" y2="36"><stop stop-color="#10B981"/><stop offset="1" stop-color="#34D399"/></linearGradient></defs></svg>
+                    </div>
+                    <h3>Digital Wallet & Payments</h3>
+                    <p>Mobile wallets, P2P transfers, bill payments, remittances, and micro-lending — powered by AI-driven credit scoring.</p>
+                    <ul class="product-features">
+                        <li>Multi-currency support</li>
+                        <li>AI credit scoring</li>
+                        <li>KYC/AML compliance</li>
+                        <li>Instant settlements</li>
+                    </ul>
+                    <a href="#contact" class="product-link">Learn more <span>&rarr;</span></a>
+                </div>
+                <!-- AI -->
+                <div class="product-card" id="ai">
+                    <div class="product-icon">
+                        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="url(#pg4)" stroke-width="3"/><path d="M24 16V32M16 24H32" stroke="url(#pg4)" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="4" fill="url(#pg4)"/><defs><linearGradient id="pg4" x1="8" y1="8" x2="40" y2="40"><stop stop-color="#F59E0B"/><stop offset="1" stop-color="#FBBF24"/></linearGradient></defs></svg>
+                    </div>
+                    <h3>AI & Analytics</h3>
+                    <p>Real-time KPIs, predictive routing, fraud detection, and customer intelligence — turn your data into decisions.</p>
+                    <ul class="product-features">
+                        <li>Predictive analytics</li>
+                        <li>Fraud prevention</li>
+                        <li>Customer insights</li>
+                        <li>Automated optimization</li>
+                    </ul>
+                    <a href="#contact" class="product-link">Learn more <span>&rarr;</span></a>
+                </div>
+            </div>
+            <!-- Channels Grid Image -->
+            <div class="channels-showcase">
+                <img src="assets/channels-grid.svg" alt="All Communication Channels" class="channels-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section class="section solutions" id="solutions">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Serve</span>
+                <h2 class="section-title">Built for <span class="gradient-text">Every Industry</span></h2>
+            </div>
+            <div class="solutions-tabs">
+                <div class="solution-tab active" data-tab="telecoms">
+                    <div class="solution-tab-icon">&#128225;</div>
+                    <h4>Telecoms</h4>
+                    <p>Operator management, smart routing, A2P monetization, and network performance analytics.</p>
+                </div>
+                <div class="solution-tab" data-tab="enterprises">
+                    <div class="solution-tab-icon">&#127970;</div>
+                    <h4>Enterprises</h4>
+                    <p>Customer engagement, omnichannel support, and automated communication workflows.</p>
+                </div>
+                <div class="solution-tab" data-tab="developers">
+                    <div class="solution-tab-icon">&#128187;</div>
+                    <h4>Developers</h4>
+                    <p>RESTful APIs, SDKs, webhooks, and sandbox environments for rapid integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- eSIM Showcase -->
+    <section class="section esim-showcase" id="esim-showcase">
+        <div class="container">
+            <div class="esim-grid">
+                <div class="esim-visual">
+                    <img src="assets/esim-illustration.svg" alt="eSIM Management Platform" class="esim-img">
+                </div>
+                <div class="esim-content">
+                    <span class="section-tag">eSIM Hub</span>
+                    <h2 class="section-title">Power Your World with <span class="gradient-text">Smart eSIM</span></h2>
+                    <p class="section-subtitle">From remote provisioning to travel plans, wholesale data and IoT connectivity — manage every eSIM from one hub.</p>
+                    <ul class="esim-features">
+                        <li>Zero-touch provisioning</li>
+                        <li>Carrier-direct data routes</li>
+                        <li>White-label portals</li>
+                        <li>IoT fleet management</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg">Explore eSIM Hub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fintech Showcase -->
+    <section class="section fintech-showcase" id="fintech-showcase">
+        <div class="container">
+            <div class="fintech-grid">
+                <div class="fintech-content">
+                    <span class="section-tag">Digital Finance</span>
+                    <h2 class="section-title">Growth Without <span class="gradient-text">Limits or Branches</span></h2>
+                    <p class="section-subtitle">Enable full digital banking directly from smartphones. Wallets, P2P transfers, bill payments, remittances, and micro-lending.</p>
+                    <ul class="fintech-features">
+                        <li>Peer-to-peer transfers</li>
+                        <li>Bill payments & remittances</li>
+                        <li>AI-driven credit scoring</li>
+                        <li>Multi-currency support</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg">Power Your Banking</a>
+                </div>
+                <div class="fintech-visual">
+                    <img src="assets/fintech-illustration.svg" alt="Digital Wallet & Payments" class="fintech-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Deep Dive -->
+    <section class="section features-deep" id="telecoms">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Platform Capabilities</span>
+                <h2 class="section-title">Enterprise-Grade <span class="gradient-text">Infrastructure</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <h4>Global Reach</h4>
+                    <p>Direct connections to 800+ mobile operators across 180+ countries with intelligent routing.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <h4>Smart Routing</h4>
+                    <p>AI-powered route optimization for delivery quality, cost efficiency, and latency reduction.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">03</div>
+                    <h4>Compliance First</h4>
+                    <p>GDPR, DLT, 10DLC, and regional regulations enforced automatically with full audit trails.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">04</div>
+                    <h4>Real-Time Analytics</h4>
+                    <p>Live dashboards for delivery rates, engagement metrics, revenue tracking, and fraud alerts.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">05</div>
+                    <h4>API-First Design</h4>
+                    <p>RESTful APIs, comprehensive SDKs, and webhooks that integrate seamlessly into your stack.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">06</div>
+                    <h4>99.9% Uptime</h4>
+                    <p>Globally distributed infrastructure with automatic failover and 24/7 monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="section partners" id="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Ecosystem</span>
+                <h2 class="section-title">Our <span class="gradient-text">Partners</span></h2>
+                <p class="section-subtitle">Collaborating with the world's leading technology and telecom companies.</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-card">Google</div>
+                <div class="partner-card">Meta</div>
+                <div class="partner-card">Microsoft</div>
+                <div class="partner-card">Amazon</div>
+                <div class="partner-card">Huawei</div>
+                <div class="partner-card">Nokia</div>
+                <div class="partner-card">Ericsson</div>
+                <div class="partner-card">Samsung</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">Loved by <span class="gradient-text">Teams Worldwide</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"Zyvore's platform reduced our messaging costs by 40% while improving delivery rates. The smart routing is a game-changer."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div>
+                            <strong>Ahmed Khan</strong>
+                            <span>CTO, TelecomPro</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"We integrated Zyvore's API in days, not months. The documentation is excellent and the support team is incredibly responsive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div>
+                            <strong>Sarah Mitchell</strong>
+                            <span>VP Engineering, FinFlow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="testimonial-text">"The eSIM management platform helped us launch in 30 new markets without a single hardware shipment. Remarkable technology."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JC</div>
+                        <div>
+                            <strong>James Chen</strong>
+                            <span>Head of Product, ConnectNow</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section case-studies" id="insights">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Case Studies</span>
+                <h2 class="section-title">Powering <span class="gradient-text">What's Possible</span></h2>
+            </div>
+            <div class="case-study-grid">
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="assets/case-study-iot.svg" alt="IoT Device Management" class="case-study-img">
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Seamless IoT Onboarding</h4>
+                        <p>Our RSP platform onboarded over 100,000 IoT devices in minutes while maintaining 99.99% uptime.</p>
+                        <a href="#" class="case-study-link">Read case study <span>&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="assets/fintech-illustration.svg" alt="Digital Banking Growth" class="case-study-img">
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Digital Banking Revolution</h4>
+                        <p>Expanding credit access for millions with AI-driven scoring and mobile-first banking.</p>
+                        <a href="#" class="case-study-link">Read case study <span>&rarr;</span></a>
+                    </div>
+                </div>
+                <div class="case-study-card">
+                    <div class="case-study-image">
+                        <img src="assets/channels-grid.svg" alt="Multi-Channel Communications" class="case-study-img">
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Global Messaging Scale</h4>
+                        <p>Processing 2B+ messages monthly across 180+ countries with intelligent routing.</p>
+                        <a href="#" class="case-study-link">Read case study <span>&rarr;</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="section awards-section" id="awards">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Recognition</span>
+                <h2 class="section-title">Trusted by the <span class="gradient-text">Industry</span></h2>
+            </div>
+            <div class="awards-grid">
+                <div class="award-card">
+                    <img src="assets/awards-badge.svg" alt="Best CPaaS Award" class="award-img">
+                    <h4>Best CPaaS Platform</h4>
+                    <p>Global Telecom Awards 2026</p>
+                </div>
+                <div class="award-card">
+                    <img src="assets/awards-badge.svg" alt="Best Messaging Award" class="award-img">
+                    <h4>Best Messaging Innovation</h4>
+                    <p>CommsTech Awards 2026</p>
+                </div>
+                <div class="award-card">
+                    <img src="assets/awards-badge.svg" alt="Best Fintech Award" class="award-img">
+                    <h4>Best Fintech Solution</h4>
+                    <p>FinTech Breakthrough 2026</p>
+                </div>
+                <div class="award-card">
+                    <img src="assets/awards-badge.svg" alt="Best eSIM Award" class="award-img">
+                    <h4>Best eSIM Innovation</h4>
+                    <p>MVNO World Congress 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="gradient-text">Zyvore</span></h2>
+                <p class="section-subtitle">Have questions? Reach out to us through any of the channels below.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h4>Email Us</h4>
+                    <a href="mailto:dalalvishal37@gmail.com" class="contact-value">dalalvishal37@gmail.com</a>
+                    <p class="contact-note">We'll respond within 24 hours</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.5 21 20 21 19.5 21C9.61 21 1.5 12.89 1.5 3C1.5 2.5 1.5 2 1.5 1.5C1.59 0.94 2.04 0.5 2.6 0.5H5.6C6.11 0.5 6.53 0.89 6.58 1.39C6.65 2.08 6.78 2.76 6.97 3.42C7.06 3.73 7.02 4.06 6.86 4.33L5.69 6.49C6.56 8.23 7.77 9.74 9.24 11L11.4 9.83C11.67 9.67 12 9.63 12.31 9.72C12.97 9.91 13.65 10.04 14.34 10.11C14.84 10.16 15.23 10.58 15.23 11.09V14.09C15.23 14.65 14.78 15.09 14.22 15.09C13.72 15.09 13.22 15.09 12.72 15.09" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h4>Call Us</h4>
+                    <a href="tel:7000515658" class="contact-value">+91 70005 15658</a>
+                    <p class="contact-note">Mon–Fri, 9am–6pm IST</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61 3.95 5.31 5.64 3.64C7.31 1.95 9.61 1 12 1C14.39 1 16.69 1.95 18.36 3.64C20.05 5.31 21 7.61 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+                    </div>
+                    <h4>Head Office</h4>
+                    <span class="contact-value">India</span>
+                    <p class="contact-note">Serving clients globally</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section" id="cta">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Connectivity?</h2>
+                    <p>Join thousands of companies using Zyvore to power their communications and digital finance.</p>
+                    <div class="cta-actions">
+                        <a href="#" class="btn btn-white btn-lg">Contact Sales</a>
+                        <a href="#" class="btn btn-outline-white btn-lg">View Documentation</a>
+                    </div>
+                </div>
+                <div class="cta-visual">
+                    <div class="cta-circle"></div>
+                    <div class="cta-circle cta-circle-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="about">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 8L20 32L32 8" stroke="url(#grad2)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                <circle cx="20" cy="20" r="4" fill="url(#grad2)"/>
+                                <defs>
+                                    <linearGradient id="grad2" x1="8" y1="8" x2="32" y2="32">
+                                        <stop stop-color="#6366F1"/>
+                                        <stop offset="1" stop-color="#06B6D4"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <span class="logo-text">Zyvore</span>
+                    </a>
+                    <p>Global connectivity and digital finance platform for the modern enterprise.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="#" aria-label="GitHub"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <a href="#cpaas">Unified Communications</a>
+                    <a href="#esim">eSIM Platform</a>
+                    <a href="#fintech">Digital Wallet</a>
+                    <a href="#ai">AI Analytics</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Solutions</h5>
+                    <a href="#telecoms">For Telecoms</a>
+                    <a href="#enterprises">For Enterprises</a>
+                    <a href="#developers">For Developers</a>
+                    <a href="#partners">Partners</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <a href="#about">About Us</a>
+                    <a href="#insights">Insights</a>
+                    <a href="#contact">Careers</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <a href="#">Documentation</a>
+                    <a href="#">API Reference</a>
+                    <a href="#">Status Page</a>
+                    <a href="#">Blog</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Zyvore. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
