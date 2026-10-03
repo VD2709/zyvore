@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" fill="none">
+    <defs>
+        <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="100%" stop-color="#06B6D4"/>
+        </linearGradient>
+        <linearGradient id="heroGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#06B6D4"/>
+            <stop offset="100%" stop-color="#10B981"/>
+        </linearGradient>
+        <linearGradient id="heroGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F59E0B"/>
+            <stop offset="100%" stop-color="#EF4444"/>
+        </linearGradient>
+        <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#F8FAFC"/>
+        </linearGradient>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#6366F1" flood-opacity="0.15"/>
+        </filter>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- Background circles -->
+    <circle cx="300" cy="250" r="200" fill="url(#heroGrad1)" opacity="0.05"/>
+    <circle cx="300" cy="250" r="150" fill="url(#heroGrad2)" opacity="0.05"/>
+    <circle cx="300" cy="250" r="100" fill="url(#heroGrad1)" opacity="0.05"/>
+
+    <!-- Connection lines -->
+    <g opacity="0.3" stroke="url(#heroGrad1)" stroke-width="1.5" stroke-dasharray="4 4">
+        <line x1="150" y1="150" x2="300" y2="250"/>
+        <line x1="450" y1="150" x2="300" y2="250"/>
+        <line x1="150" y1="350" x2="300" y2="250"/>
+        <line x1="450" y1="350" x2="300" y2="250"/>
+        <line x1="300" y1="100" x2="300" y2="250"/>
+        <line x1="300" y1="250" x2="300" y2="400"/>
+        <line x1="100" y1="250" x2="300" y2="250"/>
+        <line x1="300" y1="250" x2="500" y2="250"/>
+    </g>
+
+    <!-- Central hub -->
+    <g filter="url(#shadow)">
+        <rect x="240" y="190" width="120" height="120" rx="24" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <g filter="url(#glow)">
+        <circle cx="300" cy="250" r="35" fill="url(#heroGrad1)"/>
+    </g>
+    <!-- Hub icon - message -->
+    <path d="M285 240H315C317.5 240 320 242.5 320 245V255C320 257.5 317.5 260 315 260H305L295 268V260H285C282.5 260 280 257.5 280 255V245C280 242.5 282.5 240 285 240Z" fill="white" opacity="0.9"/>
+
+    <!-- Node 1 - SMS (top left) -->
+    <g filter="url(#shadow)">
+        <rect x="100" y="100" width="80" height="80" rx="16" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="120" y="120" width="40" height="30" rx="6" fill="url(#heroGrad1)"/>
+    <line x1="128" y1="130" x2="152" y2="130" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="128" y1="137" x2="145" y2="137" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <line x1="128" y1="144" x2="140" y2="144" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <text x="140" y="170" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">SMS</text>
+
+    <!-- Node 2 - WhatsApp (top right) -->
+    <g filter="url(#shadow)">
+        <rect x="420" y="100" width="80" height="80" rx="16" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="460" cy="135" r="18" fill="#25D366"/>
+    <path d="M452 135C452 128.4 457.4 123 464 123C470.6 123 476 128.4 476 135C476 141.6 470.6 147 464 147C462.4 147 460.9 146.7 459.5 146.1L455 148L456 143.5C453.6 141.6 452 138.5 452 135Z" fill="white"/>
+    <text x="460" y="170" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">WhatsApp</text>
+
+    <!-- Node 3 - Voice (bottom left) -->
+    <g filter="url(#shadow)">
+        <rect x="100" y="320" width="80" height="80" rx="16" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="140" cy="355" r="18" fill="url(#heroGrad2)"/>
+    <path d="M133 348V362M138 345V365M143 348V362M148 350V360" stroke="white" stroke-width="2" stroke-linecap="round"/>
+    <text x="140" y="390" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Voice</text>
+
+    <!-- Node 4 - Email (bottom right) -->
+    <g filter="url(#shadow)">
+        <rect x="420" y="320" width="80" height="80" rx="16" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="438" y="338" width="44" height="30" rx="4" fill="url(#heroGrad3)"/>
+    <path d="M438 342L460 356L482 342" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <text x="460" y="390" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">Email</text>
+
+    <!-- Node 5 - RCS (top center) -->
+    <g filter="url(#shadow)">
+        <rect x="260" y="50" width="80" height="60" rx="12" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="285" cy="75" r="10" fill="url(#heroGrad1)"/>
+    <rect x="300" y="68" width="28" height="14" rx="4" fill="url(#heroGrad2)"/>
+    <text x="300" y="100" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">RCS</text>
+
+    <!-- Node 6 - eSIM (bottom center) -->
+    <g filter="url(#shadow)">
+        <rect x="260" y="390" width="80" height="60" rx="12" fill="url(#cardBg)" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="280" y="405" width="40" height="30" rx="4" fill="none" stroke="url(#heroGrad1)" stroke-width="2"/>
+    <line x1="280" y1="415" x2="320" y2="415" stroke="url(#heroGrad1)" stroke-width="1.5"/>
+    <line x1="280" y1="425" x2="320" y2="425" stroke="url(#heroGrad1)" stroke-width="1.5"/>
+    <text x="300" y="440" text-anchor="middle" font-size="10" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">eSIM</text>
+
+    <!-- Floating particles -->
+    <circle cx="200" cy="200" r="4" fill="url(#heroGrad1)" opacity="0.6">
+        <animate attributeName="cy" values="200;190;200" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="200" r="3" fill="url(#heroGrad2)" opacity="0.6">
+        <animate attributeName="cy" values="200;210;200" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="300" r="3" fill="url(#heroGrad3)" opacity="0.6">
+        <animate attributeName="cy" values="300;290;300" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="300" r="4" fill="url(#heroGrad1)" opacity="0.6">
+        <animate attributeName="cy" values="300;310;300" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Data flow dots -->
+    <circle r="3" fill="url(#heroGrad1)">
+        <animateMotion dur="3s" repeatCount="indefinite" path="M150 150L300 250"/>
+    </circle>
+    <circle r="3" fill="url(#heroGrad2)">
+        <animateMotion dur="3s" repeatCount="indefinite" path="M450 150L300 250"/>
+    </circle>
+    <circle r="3" fill="url(#heroGrad3)">
+        <animateMotion dur="3s" repeatCount="indefinite" path="M150 350L300 250"/>
+    </circle>
+    <circle r="3" fill="url(#heroGrad1)">
+        <animateMotion dur="3s" repeatCount="indefinite" path="M450 350L300 250"/>
+    </circle>
+</svg>

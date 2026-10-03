@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+    <defs>
+        <linearGradient id="esimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#06B6D4"/>
+            <stop offset="100%" stop-color="#10B981"/>
+        </linearGradient>
+        <linearGradient id="simCard" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#1E293B"/>
+            <stop offset="100%" stop-color="#334155"/>
+        </linearGradient>
+        <filter id="esimShadow" x="-10%" y="-10%" width="120%" height="130%">
+            <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#0F172A" flood-opacity="0.15"/>
+        </filter>
+    </defs>
+
+    <!-- Background pattern -->
+    <circle cx="200" cy="150" r="120" fill="url(#esimGrad)" opacity="0.05"/>
+    <circle cx="200" cy="150" r="80" fill="url(#esimGrad)" opacity="0.05"/>
+
+    <!-- SIM Card -->
+    <g filter="url(#esimShadow)">
+        <rect x="120" y="60" width="160" height="180" rx="16" fill="url(#simCard)"/>
+    </g>
+
+    <!-- SIM chip -->
+    <rect x="155" y="95" width="90" height="70" rx="8" fill="#F59E0B"/>
+    <rect x="155" y="95" width="90" height="70" rx="8" fill="none" stroke="#D97706" stroke-width="1"/>
+    <line x1="155" y1="112" x2="245" y2="112" stroke="#D97706" stroke-width="1"/>
+    <line x1="155" y1="130" x2="245" y2="130" stroke="#D97706" stroke-width="1"/>
+    <line x1="155" y1="148" x2="245" y2="148" stroke="#D97706" stroke-width="1"/>
+    <line x1="200" y1="95" x2="200" y2="165" stroke="#D97706" stroke-width="1"/>
+    <line x1="180" y1="95" x2="180" y2="165" stroke="#D97706" stroke-width="1"/>
+    <line x1="220" y1="95" x2="220" y2="165" stroke="#D97706" stroke-width="1"/>
+
+    <!-- SIM text -->
+    <text x="200" y="195" text-anchor="middle" font-size="11" fill="white" font-family="Inter,sans-serif" font-weight="600">ZYVORE eSIM</text>
+    <text x="200" y="212" text-anchor="middle" font-size="8" fill="#94A3B8" font-family="Inter,sans-serif">Embedded SIM</text>
+
+    <!-- Signal waves -->
+    <g opacity="0.6">
+        <path d="M280 100C290 90 300 85 310 85" stroke="url(#esimGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M280 110C295 95 310 88 325 88" stroke="url(#esimGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M280 120C300 100 320 92 340 92" stroke="url(#esimGrad)" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- Connected devices -->
+    <!-- Phone -->
+    <g filter="url(#esimShadow)">
+        <rect x="40" y="100" width="50" height="80" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="48" y="110" width="34" height="50" rx="2" fill="#F1F5F9"/>
+    <circle cx="65" cy="170" r="4" fill="#E2E8F0"/>
+    <text x="65" y="145" text-anchor="middle" font-size="8" fill="#6366F1" font-family="Inter,sans-serif" font-weight="600">Phone</text>
+
+    <!-- Laptop -->
+    <g filter="url(#esimShadow)">
+        <rect x="310" y="110" width="60" height="40" rx="4" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <rect x="310" y="150" width="60" height="4" rx="2" fill="#E2E8F0"/>
+    <text x="340" y="135" text-anchor="middle" font-size="8" fill="#06B6D4" font-family="Inter,sans-serif" font-weight="600">Laptop</text>
+
+    <!-- IoT Sensor -->
+    <g filter="url(#esimShadow)">
+        <rect x="60" y="210" width="40" height="40" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1"/>
+    </g>
+    <circle cx="80" cy="230" r="10" fill="none" stroke="#10B981" stroke-width="2"/>
+    <circle cx="80" cy="230" r="4" fill="#10B981"/>
+    <text x="80" y="265" text-anchor="middle" font-size="8" fill="#64748B" font-family="Inter,sans-serif" font-weight="600">IoT</text>
+
+    <!-- Connection lines -->
+    <g stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3 3" opacity="0.5">
+        <line x1="90" y1="140" x2="120" y2="140"/>
+        <line x1="280" y1="130" x2="310" y2="130"/>
+        <line x1="100" y1="210" x2="160" y2="200"/>
+    </g>
+
+    <!-- Data flow animation -->
+    <circle r="3" fill="#06B6D4">
+        <animateMotion dur="2s" repeatCount="indefinite" path="M90 140L120 140"/>
+    </circle>
+    <circle r="3" fill="#10B981">
+        <animateMotion dur="2.5s" repeatCount="indefinite" path="M280 130L310 130"/>
+    </circle>
+
+    <!-- Status indicators -->
+    <circle cx="370" cy="80" r="6" fill="#10B981"/>
+    <text x="370" y="70" text-anchor="middle" font-size="8" fill="#10B981" font-family="Inter,sans-serif" font-weight="600">Active</text>
+
+    <circle cx="30" cy="80" r="6" fill="#6366F1"/>
+    <text x="30" y="70" text-anchor="middle" font-size="8" fill="#6366F1" font-family="Inter,sans-serif" font-weight="600">5G</text>
+</svg>
