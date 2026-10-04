@@ -2205,9 +2205,17 @@ html {
 
 .ai-widget-img {
     width: 100%;
-    max-width: 450px;
+    max-width: 500px;
     height: auto;
-    filter: drop-shadow(0 20px 40px rgba(99, 102, 241, 0.15));
+    border-radius: var(--radius-xl);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    transition: var(--transition);
+}
+
+.ai-widget-img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 30px 60px -12px rgba(99, 102, 241, 0.3);
 }
 
 /* ============================================
