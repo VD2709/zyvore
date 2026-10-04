@@ -2151,8 +2151,31 @@ html {
    AI Section
    ============================================ */
 .ai-section {
-    background: var(--light-2);
+    background: #0F0A1E;
     padding: 100px 0;
+    position: relative;
+}
+
+.ai-section .section-tag {
+    background: rgba(139, 92, 246, 0.2);
+    color: #A78BFA;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.ai-section .section-title {
+    color: var(--white);
+}
+
+.ai-section .section-subtitle {
+    color: var(--gray-lighter);
+}
+
+.ai-features li {
+    color: var(--gray-lighter);
+}
+
+.ai-features li::before {
+    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
 }
 
 .ai-grid {
@@ -2237,8 +2260,31 @@ html {
    eSIM Showcase
    ============================================ */
 .esim-showcase {
-    background: var(--white);
+    background: #0A1628;
     padding: 100px 0;
+    position: relative;
+}
+
+.esim-showcase .section-tag {
+    background: rgba(6, 182, 212, 0.2);
+    color: #22D3EE;
+    border: 1px solid rgba(6, 182, 212, 0.3);
+}
+
+.esim-showcase .section-title {
+    color: var(--white);
+}
+
+.esim-showcase .section-subtitle {
+    color: var(--gray-lighter);
+}
+
+.esim-features li {
+    color: var(--gray-lighter);
+}
+
+.esim-features li::before {
+    background: linear-gradient(135deg, #06B6D4 0%, #10B981 100%);
 }
 
 .esim-grid {
@@ -2299,8 +2345,46 @@ html {
    Fintech Showcase
    ============================================ */
 .fintech-showcase {
-    background: var(--light-2);
+    background: #1A0B2E;
     padding: 100px 0;
+    position: relative;
+}
+
+.fintech-showcase .section-tag {
+    background: rgba(236, 72, 153, 0.2);
+    color: #F472B6;
+    border: 1px solid rgba(236, 72, 153, 0.3);
+}
+
+.fintech-showcase .section-title {
+    color: var(--white);
+}
+
+.fintech-showcase .section-subtitle {
+    color: var(--gray-lighter);
+}
+
+.fintech-features li {
+    color: var(--gray-lighter);
+}
+
+.fintech-features li::before {
+    background: linear-gradient(135deg, #EC4899 0%, #8B5CF6 100%);
+}
+
+/* ============================================
+   Dark Section Buttons
+   ============================================ */
+.ai-section .btn-primary,
+.esim-showcase .btn-primary,
+.fintech-showcase .btn-primary {
+    box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+}
+
+.ai-section .btn-primary:hover,
+.esim-showcase .btn-primary:hover,
+.fintech-showcase .btn-primary:hover {
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.5);
 }
 
 .fintech-grid {

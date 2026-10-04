@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+    <defs>
+        <linearGradient id="cyanBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0A1628"/>
+            <stop offset="50%" stop-color="#0D2137"/>
+            <stop offset="100%" stop-color="#0A1628"/>
+        </linearGradient>
+        <radialGradient id="cyanGlow1" cx="40%" cy="50%" r="40%">
+            <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.2"/>
+            <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="cyanGlow2" cx="60%" cy="50%" r="40%">
+            <stop offset="0%" stop-color="#10B981" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cyanBlur">
+            <feGaussianBlur stdDeviation="50"/>
+        </filter>
+    </defs>
+    <rect width="1920" height="1080" fill="url(#cyanBg1)"/>
+    <ellipse cx="768" cy="540" rx="500" ry="350" fill="url(#cyanGlow1)" filter="url(#cyanBlur)"/>
+    <ellipse cx="1152" cy="540" rx="500" ry="350" fill="url(#cyanGlow2)" filter="url(#cyanBlur)"/>
+    <g opacity="0.04" stroke="white" stroke-width="0.5">
+        <line x1="0" y1="180" x2="1920" y2="180"/>
+        <line x1="0" y1="360" x2="1920" y2="360"/>
+        <line x1="0" y1="540" x2="1920" y2="540"/>
+        <line x1="0" y1="720" x2="1920" y2="720"/>
+        <line x1="0" y1="900" x2="1920" y2="900"/>
+        <line x1="240" y1="0" x2="240" y2="1080"/>
+        <line x1="480" y1="0" x2="480" y2="1080"/>
+        <line x1="720" y1="0" x2="720" y2="1080"/>
+        <line x1="960" y1="0" x2="960" y2="1080"/>
+        <line x1="1200" y1="0" x2="1200" y2="1080"/>
+        <line x1="1440" y1="0" x2="1440" y2="1080"/>
+        <line x1="1680" y1="0" x2="1680" y2="1080"/>
+    </g>
+    <g opacity="0.15">
+        <circle cx="400" cy="300" r="3" fill="#06B6D4"/>
+        <circle cx="800" cy="500" r="2" fill="#10B981"/>
+        <circle cx="1200" cy="350" r="3" fill="#06B6D4"/>
+        <circle cx="1600" cy="550" r="2" fill="#10B981"/>
+        <circle cx="600" cy="800" r="2" fill="#06B6D4"/>
+        <circle cx="1000" cy="850" r="3" fill="#10B981"/>
+        <circle cx="1400" cy="750" r="2" fill="#06B6D4"/>
+    </g>
+    <g stroke="#06B6D4" stroke-width="0.5" opacity="0.08">
+        <path d="M400 300L800 500L1200 350L1600 550"/>
+        <path d="M600 800L1000 850L1400 750"/>
+        <path d="M400 300L600 800"/>
+        <path d="M1600 550L1400 750"/>
+    </g>
+</svg>
