@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+    <defs>
+        <linearGradient id="robotBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0C0A1A"/>
+            <stop offset="50%" stop-color="#1A0B2E"/>
+            <stop offset="100%" stop-color="#0C0A1A"/>
+        </linearGradient>
+        <linearGradient id="robotEye1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="100%" stop-color="#06B6D4"/>
+        </linearGradient>
+        <linearGradient id="robotCircuit" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#6366F1"/>
+            <stop offset="100%" stop-color="#8B5CF6"/>
+        </linearGradient>
+        <filter id="robotGlow">
+            <feGaussianBlur stdDeviation="8" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+        <filter id="robotBlur">
+            <feGaussianBlur stdDeviation="60"/>
+        </filter>
+        <radialGradient id="robotGlowArea" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+        </radialGradient>
+    </defs>
+
+    <!-- Dark background -->
+    <rect width="1920" height="1080" fill="url(#robotBg1)"/>
+
+    <!-- Glow areas -->
+    <ellipse cx="960" cy="540" rx="600" ry="400" fill="url(#robotGlowArea)" filter="url(#robotBlur)"/>
+    <ellipse cx="400" cy="300" rx="300" ry="200" fill="url(#robotGlowArea)" filter="url(#robotBlur)" opacity="0.5"/>
+    <ellipse cx="1500" cy="700" rx="300" ry="200" fill="url(#robotGlowArea)" filter="url(#robotBlur)" opacity="0.5"/>
+
+    <!-- Circuit board pattern -->
+    <g stroke="url(#robotCircuit)" stroke-width="1" opacity="0.08" fill="none">
+        <path d="M100 150L300 150L350 200L550 200L600 250L800 250"/>
+        <path d="M100 150L100 350L200 400L400 400L450 450L650 450"/>
+        <path d="M800 250L950 250L1000 300L1200 300L1250 350L1450 350"/>
+        <path d="M650 450L650 600L750 650L950 650L1000 700L1200 700"/>
+        <path d="M1450 350L1600 350L1650 400L1800 400"/>
+        <path d="M1200 700L1200 850L1300 900L1500 900L1550 950L1750 950"/>
+        <path d="M200 800L350 800L400 850L600 850"/>
+        <path d="M1000 500L1150 500L1200 550L1400 550"/>
+    </g>
+
+    <!-- Robot/AI nodes -->
+    <g opacity="0.2">
+        <circle cx="100" cy="150" r="5" fill="#6366F1"/>
+        <circle cx="300" cy="150" r="5" fill="#8B5CF6"/>
+        <circle cx="550" cy="200" r="5" fill="#06B6D4"/>
+        <circle cx="800" cy="250" r="5" fill="#6366F1"/>
+        <circle cx="400" cy="400" r="5" fill="#8B5CF6"/>
+        <circle cx="650" cy="450" r="5" fill="#06B6D4"/>
+        <circle cx="1000" cy="300" r="5" fill="#6366F1"/>
+        <circle cx="1200" cy="300" r="5" fill="#8B5CF6"/>
+        <circle cx="1450" cy="350" r="5" fill="#06B6D4"/>
+        <circle cx="950" cy="650" r="5" fill="#6366F1"/>
+        <circle cx="1200" cy="700" r="5" fill="#8B5CF6"/>
+        <circle cx="1500" cy="900" r="5" fill="#06B6D4"/>
+        <circle cx="400" cy="850" r="5" fill="#6366F1"/>
+        <circle cx="1400" cy="550" r="5" fill="#8B5CF6"/>
+    </g>
+
+    <!-- AI Robot head silhouette (left side) -->
+    <g transform="translate(200, 400)" opacity="0.12">
+        <!-- Head -->
+        <rect x="0" y="0" width="200" height="160" rx="30" fill="none" stroke="url(#robotCircuit)" stroke-width="2"/>
+        <!-- Eyes -->
+        <circle cx="60" cy="70" r="20" fill="none" stroke="#6366F1" stroke-width="2"/>
+        <circle cx="140" cy="70" r="20" fill="none" stroke="#6366F1" stroke-width="2"/>
+        <circle cx="60" cy="70" r="8" fill="#6366F1" filter="url(#robotGlow)"/>
+        <circle cx="140" cy="70" r="8" fill="#6366F1" filter="url(#robotGlow)"/>
+        <!-- Mouth -->
+        <rect x="60" y="120" width="80" height="10" rx="5" fill="none" stroke="#06B6D4" stroke-width="1.5"/>
+        <!-- Antenna -->
+        <line x1="100" y1="0" x2="100" y2="-40" stroke="#6366F1" stroke-width="2"/>
+        <circle cx="100" cy="-50" r="8" fill="#6366F1" filter="url(#robotGlow)"/>
+        <!-- Ears -->
+        <rect x="-15" y="60" width="15" height="40" rx="5" fill="none" stroke="#8B5CF6" stroke-width="1.5"/>
+        <rect x="200" y="60" width="15" height="40" rx="5" fill="none" stroke="#8B5CF6" stroke-width="1.5"/>
+    </g>
+
+    <!-- AI Robot head silhouette (right side) -->
+    <g transform="translate(1500, 350)" opacity="0.12">
+        <!-- Head -->
+        <rect x="0" y="0" width="180" height="140" rx="25" fill="none" stroke="url(#robotCircuit)" stroke-width="2"/>
+        <!-- Eyes -->
+        <circle cx="50" cy="60" r="18" fill="none" stroke="#06B6D4" stroke-width="2"/>
+        <circle cx="130" cy="60" r="18" fill="none" stroke="#06B6D4" stroke-width="2"/>
+        <circle cx="50" cy="60" r="7" fill="#06B6D4" filter="url(#robotGlow)"/>
+        <circle cx="130" cy="60" r="7" fill="#06B6D4" filter="url(#robotGlow)"/>
+        <!-- Mouth -->
+        <rect x="50" y="105" width="80" height="8" rx="4" fill="none" stroke="#8B5CF6" stroke-width="1.5"/>
+        <!-- Antenna -->
+        <line x1="90" y1="0" x2="90" y2="-35" stroke="#06B6D4" stroke-width="2"/>
+        <circle cx="90" cy="-45" r="7" fill="#06B6D4" filter="url(#robotGlow)"/>
+    </g>
+
+    <!-- Neural network lines -->
+    <g stroke="#6366F1" stroke-width="0.5" opacity="0.1">
+        <line x1="300" y1="480" x2="600" y2="400"/>
+        <line x1="600" y1="400" x2="900" y2="500"/>
+        <line x1="900" y1="500" x2="1200" y2="400"/>
+        <line x1="1200" y1="400" x2="1550" y2="420"/>
+        <line x1="300" y1="520" x2="600" y2="600"/>
+        <line x1="600" y1="600" x2="900" y2="550"/>
+        <line x1="900" y1="550" x2="1200" y2="600"/>
+        <line x1="1200" y1="600" x2="1550" y2="550"/>
+    </g>
+
+    <!-- Floating data particles -->
+    <g opacity="0.25">
+        <circle cx="500" cy="300" r="3" fill="#6366F1">
+            <animate attributeName="cy" values="300;280;300" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="800" cy="600" r="2" fill="#06B6D4">
+            <animate attributeName="cy" values="600;580;600" dur="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1100" cy="400" r="3" fill="#8B5CF6">
+            <animate attributeName="cy" values="400;380;400" dur="5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1400" cy="700" r="2" fill="#EC4899">
+            <animate attributeName="cy" values="700;680;700" dur="3.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="600" cy="800" r="2" fill="#6366F1">
+            <animate attributeName="cy" values="800;780;800" dur="4.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="1300" cy="200" r="3" fill="#06B6D4">
+            <animate attributeName="cy" values="200;180;200" dur="3.8s" repeatCount="indefinite"/>
+        </circle>
+    </g>
+
+    <!-- Binary code rain effect -->
+    <g opacity="0.03" font-family="monospace" font-size="14" fill="#6366F1">
+        <text x="100" y="100">1010</text>
+        <text x="100" y="130">0101</text>
+        <text x="100" y="160">1100</text>
+        <text x="100" y="190">0011</text>
+        <text x="100" y="220">1010</text>
+        <text x="100" y="250">0101</text>
+        <text x="100" y="280">1100</text>
+        <text x="100" y="310">0011</text>
+        <text x="100" y="340">1010</text>
+        <text x="100" y="370">0101</text>
+        <text x="100" y="400">1100</text>
+        <text x="100" y="430">0011</text>
+        <text x="100" y="460">1010</text>
+        <text x="100" y="490">0101</text>
+        <text x="100" y="520">1100</text>
+        <text x="100" y="550">0011</text>
+        <text x="100" y="580">1010</text>
+        <text x="100" y="610">0101</text>
+        <text x="100" y="640">1100</text>
+        <text x="100" y="670">0011</text>
+        <text x="100" y="700">1010</text>
+        <text x="100" y="730">0101</text>
+        <text x="100" y="760">1100</text>
+        <text x="100" y="790">0011</text>
+        <text x="100" y="820">1010</text>
+        <text x="100" y="850">0101</text>
+        <text x="100" y="880">1100</text>
+        <text x="100" y="910">0011</text>
+        <text x="100" y="940">1010</text>
+        <text x="100" y="970">0101</text>
+        <text x="100" y="1000">1100</text>
+        <text x="100" y="1030">0011</text>
+    </g>
+
+    <!-- Grid overlay -->
+    <g opacity="0.02" stroke="white" stroke-width="0.5">
+        <line x1="0" y1="135" x2="1920" y2="135"/>
+        <line x1="0" y1="270" x2="1920" y2="270"/>
+        <line x1="0" y1="405" x2="1920" y2="405"/>
+        <line x1="0" y1="540" x2="1920" y2="540"/>
+        <line x1="0" y1="675" x2="1920" y2="675"/>
+        <line x1="0" y1="810" x2="1920" y2="810"/>
+        <line x1="0" y1="945" x2="1920" y2="945"/>
+        <line x1="160" y1="0" x2="160" y2="1080"/>
+        <line x1="320" y1="0" x2="320" y2="1080"/>
+        <line x1="480" y1="0" x2="480" y2="1080"/>
+        <line x1="640" y1="0" x2="640" y2="1080"/>
+        <line x1="800" y1="0" x2="800" y2="1080"/>
+        <line x1="960" y1="0" x2="960" y2="1080"/>
+        <line x1="1120" y1="0" x2="1120" y2="1080"/>
+        <line x1="1280" y1="0" x2="1280" y2="1080"/>
+        <line x1="1440" y1="0" x2="1440" y2="1080"/>
+        <line x1="1600" y1="0" x2="1600" y2="1080"/>
+        <line x1="1760" y1="0" x2="1760" y2="1080"/>
+    </g>
+</svg>
